@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Variables */
@@ -158,8 +159,9 @@ h1, h2, h3, h4, h5, h6{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    background: #F5FAFF;
     padding: 80px 80px;
+    background: #F5FAFF;
+    background: linear-gradient(#F5FAFF, #f5faff00)
 }
 .benefits_wrapper .section_title{
     text-align: center;
@@ -221,4 +223,161 @@ h1, h2, h3, h4, h5, h6{
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
+}
+
+.benefits_ads{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 85px 0;
+}
+.benefits_ads h1{
+    margin-bottom: 0 !important;
+    text-transform: capitalize;
+}
+.benefits_cards{
+    display: flex;
+    justify-content:space-between;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+.benefits_card_slngle{
+    width: 200px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+.benefits_card_slngle:hover{
+    top: -15px;
+}
+.benefits_card_slngle img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+.benefits_card_slngle h4{
+    font-size: 1.19em;
+    margin-bottom: 14px;
+    line-height: 1.45em;
+}
+.benefits_card_slngle p{
+    font-size: 0.9em;
+    color: var(--gray-text);
+    line-height: 1.5em;
+}
+/* .test{
+    width: 700px;
+    height: 700px;
+    border: 10px solid #000;
+    margin: 10px auto;
+
+    background: black;
+    background: linear-gradient(130deg, rgba(255, 0, 0, 0.5) -8%, rgb(233, 233, 85) 90%);
+    background: radial-gradient(red 30%, green 30%);
+} */
+
+
+/* start_now */
+.start_now{
+    margin: 50px 0;
+    position: relative;
+    color: white;
+    background: var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color) 50%, #fff 50%);
+}
+.start_now .container{
+    background: var(--primary-color);
+    padding-right: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+.start_now_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.start_now_content .section_title{
+    font-size: 2.4em;
+    width: 50%;
+}
+.start_now_content p{
+    font-size: 1.2em;
+}
+.start_now_btn_wrapper{
+    width: 30%;
+}
+.start_now_btn_wrapper .app_button{
+    display: block;
+    width: fit-content;
+    background-color: #000;
+    margin-top: 25px;
+}
+.start_now_btn_wrapper .app_button i{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    position: relative;
+    right: 0;
+    margin-left: 5px;
+}
+.start_now_btn_wrapper .app_button:hover i{
+    right: -12px;
+}
+.start_now_lalalalla{
+    width: 30%;
+    height: 90px;
+    position: absolute;
+    top: -40px;
+    z-index: 5;
+    left: 0;
+    object-fit: cover;
+}
+
+/* faq */
+.faq{
+    margin: 80px 0;
+}
+.faq .section_title{
+    margin-bottom: 60px;
+}
+.faq_wrapper{
+    border-bottom: 1px solid #ddd;
+    padding: 40px 0;
+}
+.faq_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq_head h4{
+    font-size: 1.2em;
+    color: var(--gray-text);
+}
+.faq_body{
+    font-size: 0.87em;
+    color: var(--gray-text);
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.faq_active .faq_body{
+    padding-top: 23px;
+    height: auto;
+    padding-top: 22px;
 }
